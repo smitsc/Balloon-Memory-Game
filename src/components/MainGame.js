@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Table, Grid, Row, Col, Label } from 'react-bootstrap'
+import { Table, Grid, Row, Col } from 'react-bootstrap'
 import Shuffle from 'shuffle-array';
 import Card from './Card';
 import img1 from '../images/balloon1.jpg';
@@ -43,7 +43,7 @@ export default class MyGame extends React.Component {
 		chkFlip[this.state.isGuess] = iname;
 		if (this.state.isGuess) {
 			if (chkFlip[this.state.isGuess] === chkFlip[!this.state.isGuess]) {
-				    this.setState({ message: 'Winner, Winner, Chciken Dinner' });
+				    this.setState({ message: 'Winner, Winner, Chicken Dinner' });
 			}
 			chkFlip = [];
 		}  
@@ -64,7 +64,7 @@ export default class MyGame extends React.Component {
 					  </Col>				
 					);
 				})}
-				<Label className="card-box">{this.state.message}</Label>
+				<div className="card-box">{this.state.message}</div>
 			</Grid>
 		);
 	}
