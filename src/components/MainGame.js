@@ -55,17 +55,26 @@ export default class MyGame extends React.Component {
 		console.log(!this.state.isGuess + "-" + chkFlip[!this.state.isGuess]);
 	}
 	render(){
-		return (
+		
+		var gridImages = 
 			<Grid>
-				{ images.map((imageNbr, idx) => {
-					this.state.cards[idx]=imageNbr;
-					return (
-					  <Col sm={6} md={3}>
-						<Card key={idx} styles={styles} imgname={this.state.cards[idx]} onClick={() => this.handleClick(imageNbr)} />
-					  </Col>				
-					);
-				})}
+					{ images.map((imageNbr, idx) => {
+						this.state.cards[idx]=imageNbr;
+						return (
+							<Col sm={6} md={3}>
+							<Card key={idx} styles={styles} imgname={this.state.cards[idx]} onClick={() => this.handleClick(imageNbr)} />
+							</Col>				
+						);
+					})}
 			</Grid>
+
+
+		return (
+			React.createElement(
+				'div', {className: 'card-box'},
+				gridImages,
+				React.createElement('h2', {className: 'card-box-message'}, "Message")
+			)
 		);
 	}
 };
