@@ -254,6 +254,23 @@ body {
     padding: 0;
 }
 
+
+#scratcher-box-panel .container {
+    padding-left: 0;
+    padding-right: 8px;
+}
+
+#scratcher-box-panel .container .col-sm-6 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.card-box {
+    text-align: center;
+	background:#0000FF;
+  }
+
+
 /*MOBILE*/
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
