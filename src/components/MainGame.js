@@ -18,8 +18,10 @@ const styles = {
 		border: '1px solid #eeeeee',
 		borderRadius: '3px',
 		padding: '5px',
-		width: '100px',
-		Height: '100px'
+		// width: '100px',
+		// Height: '100px'
+		height: '100%',
+		width: '100%'
 	},
 	image: {
 		height: '100%',

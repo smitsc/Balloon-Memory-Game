@@ -257,7 +257,7 @@ body {
 
 #scratcher-box-panel .container {
     padding-left: 0;
-    padding-right: 8px;
+    padding-right: 24px;
 }
 
 #scratcher-box-panel .container .col-sm-6 {
@@ -280,6 +280,21 @@ body {
 /*MOBILE*/
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+    #scratcher-box-panel {
+        padding: 5px;
+    }
+
+    #scratcher-box-panel .container .col-sm-6 {
+        width: 25%;
+        float: left;
+    }
+
+    #scratcher-box-panel .container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
     #scratcher-box-panel,
     #scratcher-box{
         margin: 26px;
