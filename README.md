@@ -1,4 +1,4 @@
-![What is Balloon Memory Game](images/bmgLogo.png)
+![What is Balloon Memory Game](src/images/bmgLogo.png)
 
 # On-Boarding Game - Balloon Memory Game
 
