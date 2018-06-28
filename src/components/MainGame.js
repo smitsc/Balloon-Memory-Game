@@ -33,14 +33,15 @@ let images = Shuffle([img1,img2,img3,img4,img5,img6,img7,img8,img9,img10,img1,im
 let chkFlip = [2];
 
 export default class MyGame extends React.Component {
-	  constructor(props) {
+	constructor(props) {
 		super(props);
 		this.state = {
 		  cards: Array(20).fill(null),
 		  message: 'keep on playing',
 		  isGuess: false
 		};
-	  }
+	}
+	
 	handleClick(iname) {
 		chkFlip[this.state.isGuess] = iname;
 		if (this.state.isGuess) {
@@ -52,10 +53,9 @@ export default class MyGame extends React.Component {
 		this.setState({
 			isGuess: !this.state.isGuess
 		})
-		console.log(this.state.isGuess + "-" + chkFlip[this.state.isGuess] + "\n");
-		console.log(!this.state.isGuess + "-" + chkFlip[!this.state.isGuess]);
 	}
-	render(){
+	
+	render(){		
 		return (
 			<Grid>
 				{ images.map((imageNbr, idx) => {
